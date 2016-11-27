@@ -5,7 +5,7 @@
  * Date: 2016/11/18
  * Time: 12:30
  */
-namespace wxapi\lib;
+namespace weixin\lib;
 class Http
 {
     public function get($url)

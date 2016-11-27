@@ -5,9 +5,9 @@
  * Date: 2016/11/18
  * Time: 12:47
  */
-namespace wxapi;
-use wxapi\lib\Common;
-use wxapi\lib\Http;
+namespace weixin;
+use weixin\lib\Common;
+use weixin\lib\Http;
 class WxSync
 {
     public function notify($wxUrl, $wxParam,$wxConf)

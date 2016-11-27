@@ -5,7 +5,7 @@
  * Date: 2016/11/18 0018
  * Time: 19:46
  */
-namespace wxapi\lib;
+namespace weixin\lib;
 class Common
 {
     /**
