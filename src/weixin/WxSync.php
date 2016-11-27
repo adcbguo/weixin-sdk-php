@@ -1,7 +1,7 @@
 <?php
 /**
  * 微信同步任务相关
- * User: PHP
+ * User: GGC
  * Date: 2016/11/18
  * Time: 12:47
  */

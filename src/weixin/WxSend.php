@@ -2,14 +2,14 @@
 
 /**
  * 微信消息发送相关
- * User: PHP
+ * User: GGC
  * Date: 2016/11/18
  * Time: 12:30
  */
 namespace weixin;
 use weixin\lib\Common;
 use weixin\lib\Http;
-class WxSendMsg
+class WxSend
 {
     public function text($wxUrl,$wxParam,$data){
         $http = new Http();

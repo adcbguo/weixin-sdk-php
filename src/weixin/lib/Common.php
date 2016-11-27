@@ -1,7 +1,7 @@
 <?php
 /**
  * 微信公共类库
- * User: ggc
+ * User: GGC
  * Date: 2016/11/18 0018
  * Time: 19:46
  */
