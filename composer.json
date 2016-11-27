@@ -1,0 +1,16 @@
+{
+  "name": "adcbguo/weixin-sdk-php",
+  "description": "微信聊天SDK PHP版本",
+  "keywords": ["weixin"],
+  "type":"library",
+  "license": "MIT",
+  "authors": [
+    {"name": "ggc", "email": "adcbguo@qq.com"}
+  ],
+  "require": {
+    "php": ">=5.1"
+  },
+  "autoload": {
+    "psr-4": { "weixin\\": "src/weixin" }
+  }
+}
