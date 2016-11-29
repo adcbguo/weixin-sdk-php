@@ -18,6 +18,7 @@ class Http
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        curl_setopt($ch,CURLOPT_COOKIE,'');
         //执行并获取HTML文档内容
         $output = curl_exec($ch);
         //释放curl句柄
@@ -33,6 +34,7 @@ class Http
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        curl_setopt($ch,CURLOPT_COOKIE,'');
         // post数据
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt ($ch, CURLOPT_HTTPHEADER, $header);
