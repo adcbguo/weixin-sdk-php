@@ -96,7 +96,7 @@ class WxLogin
     public function init($wxUrl, $wxParam)
     {
         $http = new http();
-        $url = $wxUrl['init'] . '?pass_ticket=' . $wxParam['ticket'] . '&skey=' . $wxParam['skey'] . '&r=' . time();
+        $url = $wxUrl['init'] . '?pass_ticket=' . $wxParam['ticket'] . '&lang=zh_CN&skey=' . $wxParam['skey'] . '&r=' . time();
         $header[] = 'ContentType: application/json; charset=UTF-8';
         $data = json_encode([
             'BaseRequest' => [

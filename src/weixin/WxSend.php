@@ -13,7 +13,7 @@ class WxSend
 {
     public function text($wxUrl,$wxParam,$data){
         $http = new Http();
-        $url = $wxUrl['sendmsg'].'?pass_ticket='.$wxParam['ticket'];
+        $url = $wxUrl['sendmsg'].'?lang=zh_CN&pass_ticket='.$wxParam['ticket'];
         $header[] = 'ContentType: application/json; charset=UTF-8';
         $LocalID = Common::msectime();
         $data = json_encode([
@@ -29,7 +29,7 @@ class WxSend
                 'FromUserName' => $data['FromUserName'],
                 'ToUserName' => $data['ToUserName'],
                 'LocalID' => $LocalID,
-                'ClientMsgId' =>$LocalID
+                'ClientMsgId' => $LocalID
             ],
             'Scene'=>0
         ],JSON_UNESCAPED_UNICODE);
